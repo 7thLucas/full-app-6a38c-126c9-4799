@@ -1,0 +1,1 @@
+Saya punya usaha laundry dengan beberapa cabang, tapi operasional hariannya masih sering dicek manual lewat WhatsApp. Saya ingin bikin aplikasi sederhana untuk bantu pantau checklist cabang, status cucian, bukti foto, dan laporan masalah tiap hari.
