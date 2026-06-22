@@ -1,0 +1,98 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait  .sl-layout { flex-direction: column-reverse; }
+  .mode-landscape .sl-left  { width: 48%; padding: 3rem; }
+  .mode-landscape .sl-right { flex: 1; padding: 2.5rem; }
+  .mode-portrait  .sl-left  { flex: 1; padding: 2rem; }
+  .mode-portrait  .sl-right { height: 42%; padding: 1.5rem; flex-shrink: 0; }
+  .mode-landscape .sl-title { font-size: 3.75rem; line-height: 1; }
+  .mode-portrait  .sl-title { font-size: 2.25rem; line-height: 1.05; }
+</style>
+<section class="w-full h-full bg-white overflow-auto">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: content column -->
+    <div class="sl-left flex flex-col justify-between bg-white">
+
+      <!-- Brand mark -->
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center flex-shrink-0">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+          </svg>
+        </div>
+        <span class="text-xs font-bold text-indigo-600 tracking-widest uppercase">Laundry Ops</span>
+      </div>
+
+      <!-- Headline block -->
+      <div>
+        <span class="inline-block bg-indigo-50 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full mb-5 tracking-wide uppercase">Manajemen Multi-Cabang</span>
+        <h1 class="sl-title font-black text-slate-900 mb-5">Semua<br/>Cabang,<br/>Satu<br/>Layar.</h1>
+        <p class="text-sm text-slate-500 leading-relaxed max-w-xs">
+          Checklist harian, status cucian, bukti foto, dan laporan masalah — semua terpusat dan terstruktur, tanpa WhatsApp.
+        </p>
+      </div>
+
+      <!-- Attribution -->
+      <data-attribution />
+    </div>
+
+    <!-- Right: visual mock dashboard -->
+    <div class="sl-right bg-gradient-to-br from-indigo-600 via-indigo-700 to-violet-800 flex flex-col justify-center gap-3 relative overflow-hidden rounded-none">
+      <!-- Dot texture -->
+      <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(white 1px, transparent 1px); background-size: 22px 22px;"></div>
+
+      <div class="relative z-10 flex flex-col gap-3">
+        <!-- Main status card -->
+        <div class="bg-white/15 border border-white/25 rounded-2xl p-4">
+          <div class="text-white/60 text-xs font-medium mb-2 uppercase tracking-wide">Laporan Harian</div>
+          <div class="flex items-end justify-between">
+            <div>
+              <span class="text-4xl font-black text-white">5</span>
+              <span class="text-white/40 text-xl font-semibold"> / 5 cabang</span>
+            </div>
+            <span class="bg-emerald-400/25 border border-emerald-400/40 text-emerald-300 text-xs font-semibold px-2.5 py-1 rounded-full">✓ Semua Masuk</span>
+          </div>
+        </div>
+
+        <!-- Two metric cards -->
+        <div class="flex gap-3">
+          <div class="flex-1 bg-white/10 border border-white/20 rounded-xl p-3">
+            <div class="text-white/50 text-xs mb-1">Masalah</div>
+            <div class="text-2xl font-black text-white">2</div>
+            <div class="text-yellow-300 text-xs font-medium mt-0.5">Menunggu Tindakan</div>
+          </div>
+          <div class="flex-1 bg-white/10 border border-white/20 rounded-xl p-3">
+            <div class="text-white/50 text-xs mb-1">Cucian Selesai</div>
+            <div class="text-2xl font-black text-white">47</div>
+            <div class="text-cyan-300 text-xs font-medium mt-0.5">Item Hari Ini</div>
+          </div>
+        </div>
+
+        <!-- Branch status list -->
+        <div class="bg-white/10 border border-white/15 rounded-xl p-3">
+          <div class="text-white/50 text-xs font-semibold uppercase tracking-wider mb-2.5">Status Cabang</div>
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center justify-between">
+              <span class="text-white/90 text-xs">Cabang Utama</span>
+              <span class="text-emerald-300 text-xs font-semibold">✓ Lengkap</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-white/90 text-xs">Cabang Selatan</span>
+              <span class="text-emerald-300 text-xs font-semibold">✓ Lengkap</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-white/90 text-xs">Cabang Timur</span>
+              <span class="text-yellow-300 text-xs font-semibold">⚠ Ada Masalah</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-white/90 text-xs">Cabang Barat</span>
+              <span class="text-emerald-300 text-xs font-semibold">✓ Lengkap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
