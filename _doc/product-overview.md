@@ -1,7 +1,7 @@
 # Product Overview
 
-## Working Title
-**Laundry Ops** *(app name TBD — to be confirmed during onboarding)*
+## App Name
+**Rapi Laundry**
 
 ## The Problem
 Multi-branch laundry owners rely on WhatsApp group chats to manage daily operations across all their locations. This means:
