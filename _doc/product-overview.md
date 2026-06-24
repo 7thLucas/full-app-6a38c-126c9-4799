@@ -17,7 +17,7 @@ A focused daily operational monitoring app that replaces the WhatsApp workflow w
 
 ## Target Users
 - **Owner / Operator**: The multi-branch laundry business owner who needs full visibility across all locations without manually querying each one via WhatsApp every day.
-- **Branch Staff**: Staff at each laundry location who submits the daily operational report — checklist items, current laundry batch status, supporting photos, and any problems encountered.
+- **Branch Manager (Manajer Cabang)**: The manager at each laundry branch who submits the daily operational report — checklist items, current laundry batch status, supporting photos, and any problems encountered.
 
 ## Core Features (MVP)
 1. **Daily Branch Checklist** — Structured checklist per branch; staff ticks off mandatory items before end-of-day submission.
